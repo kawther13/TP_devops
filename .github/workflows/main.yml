@@ -21,7 +21,7 @@ jobs:
       - name: Build application
         run: |
           # Commandes pour compiler votre application Java
-          javac -d target src/main/java/*.java
+          javac -d target src/junit/monprojet/*.java
 
   test:
     name: Test
