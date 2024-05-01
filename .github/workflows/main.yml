@@ -16,6 +16,8 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '21'
+          distribution: 'adopt' # Ajout de la distribution
+
       - name: Build application
         run: |
           # Commandes pour compiler votre application Java
@@ -31,12 +33,15 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '21'
+          distribution: 'adopt' # Ajout de la distribution
+
       - name: Install JUnit
         run: |
           # Commandes pour installer JUnit
           mkdir lib
           curl -O https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.8.2/junit-platform-console-standalone-1.8.2.jar
           mv junit-platform-console-standalone-1.8.2.jar lib/
+
       - name: Run automated tests
         run: |
           # Commandes pour exécuter les tests automatisés avec JUnit
