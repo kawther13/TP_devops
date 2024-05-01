@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '21'
-          distribution: 'adopt' # Ajout de la distribution
+          distribution: 'adopt'
 
       - name: Build application
         run: |
@@ -33,7 +33,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '21'
-          distribution: 'adopt' # Ajout de la distribution
+          distribution: 'adopt'
 
       - name: Install JUnit
         run: |
