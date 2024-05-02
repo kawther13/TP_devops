@@ -13,10 +13,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # - name: Setup JDK 21
-      #   uses: actions/setup-java@v2
-      #   with:
-      #     java-version: '21'
+      - name: Setup JDK 21
+        uses: actions/setup-java@v2
+        with:
+           java-version: '21'
 
       - name: Build application
         run: |
@@ -30,10 +30,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # - name: Setup JDK 21
-      #   uses: actions/setup-java@v2
-      #   with:
-      #     java-version: '21'
+      - name: Setup JDK 21
+        uses: actions/setup-java@v2
+        with:
+           java-version: '21'
 
       - name: Install JUnit
         run: |
@@ -60,12 +60,4 @@ jobs:
       #     # Commands to deploy your application to a production environment
       #     # Example: Use tools like Docker, Ansible, or simply copy files to a server
 
-  # deployment-approval:
-  #   name: Deployment Approval
-  #   runs-on: ubuntu-latest
-  #   if: github.event_name == 'push' && github.ref == 'refs/heads/master'  # Only wait for approval for pushes to the master branch
-  #   steps:
-  #     - name: Wait for manual approval
-  #       uses: peaceiris/actions-wait-for@v2
-  #       with:
-  #         timeout: '2h'  # Adjust the timeout as needed
+ 
