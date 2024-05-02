@@ -22,7 +22,8 @@ jobs:
       - name: Build application
         run: |
           mkdir -p target
-          javac -d target https://github.com/kawther13/TP_devops/tree/master/src/junit/monprojet/*.java 
+      
+          javac -d target -sourcepath src/junit/monprojet/ PorteMon.java
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v2
