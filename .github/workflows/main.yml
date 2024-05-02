@@ -20,10 +20,10 @@ jobs:
           distribution: 'adopt'
 
       - name: Build application
-        run: |
-          mkdir -p target
-      
-          javac -d target -sourcepath src/junit/monprojet/ *.java
+  run: |
+    mkdir -p target
+    javac -d target src/junit/monprojet/*.java
+
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v2
