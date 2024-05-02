@@ -22,7 +22,7 @@ jobs:
       - name: Build application
         run: |
           mkdir -p target
-          javac -d target src/junit/monprojet/PorteMon.java
+          javac -d target https://github.com/kawther13/TP_devops.gita
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v2
