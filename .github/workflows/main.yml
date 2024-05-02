@@ -22,7 +22,7 @@ jobs:
       - name: Build application
   run: |
     mkdir -p target
-    javac -d target src/junit/monprojet/*.java
+    javac -d target $GITHUB_WORKSPACE/src/junit/monprojet/*.java
 
 
       - name: Archive artifacts
