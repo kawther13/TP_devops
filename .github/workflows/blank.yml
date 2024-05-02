@@ -21,7 +21,7 @@ jobs:
       - name: Build application
         run: |
           # Commands to compile your Java application
-          javac -d target ../src/*.java
+          javac -d target ./src/*.java
 
   test:
     name: Test
