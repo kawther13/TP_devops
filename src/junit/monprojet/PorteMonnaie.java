@@ -18,12 +18,12 @@ public class PorteMonnaie {
 	    String unite = sa.getUnite();
 	    int quantite = sa.getQuantite();
 	    
-	    // Vérifier si l'unité existe déjà dans le porte-monnaie
+
 	    if (contenu.containsKey(unite)) {
 	        quantite += contenu.get(unite);
 	    }
 	    
-	    // Mettre à jour la quantité dans le porte-monnaie
+	   
 	    contenu.put(unite, quantite);
 	}
 
