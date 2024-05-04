@@ -13,10 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Setup JDK 17
+      - name: Setup JDK 11
         uses: actions/setup-java@v2
         with:
-           java-version: '17'
+           distribution: 'adopt'
+           java-version: '11'
 
       - name: Build application
         run: |
@@ -33,6 +34,7 @@ jobs:
       - name: Setup JDK 17
         uses: actions/setup-java@v2
         with:
+           distribution: 'adopt'
            java-version: '17'
 
       - name: Install JUnit
