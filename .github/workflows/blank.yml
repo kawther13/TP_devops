@@ -43,13 +43,13 @@ jobs:
           mkdir lib
           curl -O https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.8.2/junit-platform-console-standalone-1.8.2.jar
           mv junit-platform-console-standalone-1.8.2.jar lib/
-          javac -d target ./src/junit/monprojet/test/*.java
+         
 
       - name: Run automated tests
         run: |
           # Commands to run automated tests with JUnit
           java -jar lib/junit-platform-console-standalone-1.8.2.jar --class-path target --scan-class-path
-
+         
   deployment:
     name: Deployment
     runs-on: ubuntu-latest
