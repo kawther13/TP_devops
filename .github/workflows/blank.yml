@@ -23,6 +23,7 @@ jobs:
         run: |
           # Commands to compile your Java application
           javac -d target ./src/junit/monprojet/*.java
+          javac -d target ./src/junit/monprojet/test/*.java
 
   test:
     name: Test
